@@ -4,7 +4,21 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: "MadSid",
+    siteTitleAlt: `MadSid`,
+    author: "Sidhartha Madipalli",
+    description: "A collection of whatever I wanted to say",
+    siteUrl: "https://madsid.com/",
+    externalLinks: [
+      {
+        name: "twitter",
+        url: "https://twitter.com/mad5id",
+      },
+      {
+        name: "github",
+        url: "https://github.com/madsid",
+      },
+    ],
     navigation: [
       {
         title: `Blog`,
@@ -20,12 +34,6 @@ module.exports = {
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {},
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
     },
     `gatsby-plugin-sitemap`,
     {
