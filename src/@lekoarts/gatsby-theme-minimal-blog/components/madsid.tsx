@@ -16,6 +16,8 @@ const Madsid = () => {
 		>
 			<Image
 				sx={{
+					width: 100,
+					height: 100,
 					mt: 3,
 					mb: 3,
 				}}
