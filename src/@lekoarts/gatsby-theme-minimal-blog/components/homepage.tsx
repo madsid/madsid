@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Flex, Image, Divider } from '@theme-ui/components';
+import { Flex } from '@theme-ui/components';
 import { Link } from 'gatsby';
 import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout';
 import Listing from '@lekoarts/gatsby-theme-minimal-blog/src/components/listing';
@@ -8,6 +8,7 @@ import useMinimalBlogConfig from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/
 import useSiteMetadata from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata';
 import replaceSlashes from '@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes';
 import { visuallyHidden } from '@lekoarts/gatsby-theme-minimal-blog/src/styles/utils';
+import Madsid from './madsid';
 
 type PostsProps = {
 	posts: {
@@ -32,27 +33,7 @@ const Homepage = ({ posts }: PostsProps) => {
 	return (
 		<Layout>
 			<h1 sx={visuallyHidden}>{siteTitle}</h1>
-			<Flex
-				sx={{
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					flexDirection: 'column',
-					variant: `dividers.bottom`,
-					mb: 4,
-				}}
-			>
-				<Image
-					sx={{
-						mt: 3,
-						mb: 3,
-					}}
-					src={'/madsid.png'}
-					alt='sidhartha madipalli photo'
-				/>
-				<h1 sx={{ margin: 0 }}>Sidhartha Madipalli</h1>
-				<h3 sx={{ mt: -2 }}> Front End Engineer at AWS </h3>
-			</Flex>
+			<Madsid />
 			<Flex
 				sx={{
 					mb: [2],

@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import SEO from '@lekoarts/gatsby-theme-minimal-blog/src/components/seo';
 import Layout from '@lekoarts/gatsby-theme-minimal-blog/src/components/layout';
+import Madsid from './madsid';
 
 type PageProps = {
 	data: {
@@ -19,6 +20,7 @@ type PageProps = {
 export default ({ data: { page } }: PageProps) => (
 	<Layout>
 		<SEO title={page.title} description={page.excerpt} />
+		<Madsid />
 		<section
 			sx={{
 				my: 5,
